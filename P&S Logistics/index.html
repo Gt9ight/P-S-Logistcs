@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="invoice-container">
+        <h1>P&S Mobile Diesel</h1>
+        <div class="name">Caesar Buitrago</div>
+        <div class="phone">Phone: (777)-777-7777</div>
+        <div id="invoice-date">Date:</div>
+        <div id="invoice-number">Invoice #</div>
+        <table id="invoice-table">
+          <thead>
+            <tr>
+              <th>Qty</th>
+              <th>Item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="invoice-items">
+            <!-- Items will be added dynamically here -->
+          </tbody>
+        </table>
+        <button class="adding" onclick="addItem()">Add Item</button>
+        <h3 id="total">Total: $0.00</h3>
+        <button class="send" type="submit">Submit</button>
+        </form>
+      </div>
+      <script src="main.js"></script>
+      
+
+</body>
+</html>

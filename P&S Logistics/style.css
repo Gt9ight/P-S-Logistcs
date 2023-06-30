@@ -1,0 +1,149 @@
+body {
+  background-color: #293754;
+    font-family: Arial, sans-serif;
+    color: #E3E6F3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .invoice-container {
+    background-color: #141415;
+    box-shadow: 10px 10px #7a7777;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 4px solid #101010;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
+
+  h1 {
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .phone {
+    font-weight: bold;
+  }
+
+  #invoice-date {
+    font-weight: bold;
+    margin-bottom: 10px
+  }
+  
+  #invoice-number {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  table th,
+  table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .delete-btn:hover {
+    background-color: #82332e;
+  }
+
+  .adding{
+    cursor: pointer;
+    background-color: rgb(245, 247, 249);
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 4px;
+  }
+
+
+  .slide-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInAnimation 0.5s ease-in forwards;
+  }
+  
+  .slide-out {
+    opacity: 1;
+    transform: translateX(0);
+    animation: slideOutAnimation 0.5s ease-out forwards;
+  }
+  
+  @keyframes slideInAnimation {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOutAnimation {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+  
+ .send {
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #fafafa;
+    background-color: transparent;
+    border: 2px solid rgb(219, 212, 212);
+    padding: 8px;
+    font-weight: bold;
+  }
+  .send:hover {
+    cursor: pointer;
+    background-color: #3f70cb;
+    color: #E3E6F3;
+  }
+  
+  #total {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .invoice-container {
+      padding: 20px;
+    }
+  
+    .quantity-input,
+    .item-input,
+    .price-input {
+      width: 90%;
+      height: 50%;
+    }
+  }
+
+
+  
